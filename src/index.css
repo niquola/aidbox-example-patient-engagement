@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.global-nav {
+  padding: 10px;
+  display: inline-block;
+}
+
+.patient-banner {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.patient-banner .photo {
+  vertical-align: top;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  margin-right: 1em;
+  border-radius: 4px;
+}
+.patient-banner h3 {
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.main-nav {
+  border-bottom: 1px solid #ddd;
+}
+
+.navig {
+  padding: 30px;
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.nav-group {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin-right: 2em;
+}
+
+.navig h3 {
+  text-align: left;
+  color: gray;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  margin-top: 2em;
+}
+
+.nav-item {
+  display: block;
+  padding: 5px;
+  text-align: left;
+}
+
+.main {
+  padding: 10px;
+}
+.pane {
+  padding: 10px 0;
+}
+
+.workflow {
+
+}
+
+.workflow .navigation {
+  width: 300px;
+  float: left;
+  background-color: white;
+  position: relative; 
+}
+
+.workflow .navigation h3.nav-title {
+  color: #888;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0;
+  color: #888;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  height: 45px; 
+}
+.workflow .navigation .status-line {
+  position: absolute;
+  border-left: 2px solid #ddd;
+  top: 90px;
+  bottom: 38px;
+  left: 46px;
+  z-index: 1; 
+  top: 59px;
+  bottom: 38px;
+}
+.workflow .navigation .wf-item {
+  display: block;
+  margin: 0 20px;
+  padding: 10px 20px;
+  color: #2B74E4;
+  posiiton: relative;
+  cursor: pointer;
+  border-radius: 3px; 
+  text-align: left;
+  text-decoration: none;
+}
+.workflow .navigation .wf-item.active {
+  background-color: #2f7de1;
+  color: white; 
+}
+.workflow .navigation .wf-item.active:hover {
+  background-color: #2f7de1;
+  color: white; 
+  text-decoration: none;
+}
+.workflow .navigation .wf-item:hover {
+  background-color: #f1f1f1; 
+  text-decoration: none;
+}
+.workflow .navigation .wf-item:hover .wf-status {
+  border-color: #ccc; 
+}
+.workflow .navigation .wf-item:hover .wf-issues-badge {
+  background-color: white; 
+}
+.workflow .navigation .wf-item:last-child {
+  margin-bottom: 10px; 
+}
+.workflow .navigation .wf-item .wf-issues-badge {
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 3px 5px;
+  float: right;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #f44336;
+  background: #f1f1f1;
+  font-weight: bold; 
+}
+.workflow .navigation .wf-item .wf-status {
+  width: 14px;
+  margin-right: 10px;
+  height: 14px;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  position: relative;
+  z-index: 2; 
+}
+.workflow .navigation .wf-item .wf-status.todo {
+  background-color: white; 
+}
+.workflow .navigation .wf-item .wf-status.done {
+  background-color: #6CC049;
+  border-color: #6CC049; 
+}
+.workflow .navigation .wf-item .wf-status.skiped {
+  background-color: #ddd;
+  border-color: #ddd; 
+}
+.workflow .navigation .wf-item .wf-status.fixed {
+  background-color: #f1f1f1;
+  border-color: #ddd;
+}
+.workflow .workspace {
+  background: white;
+  display: block;
+  margin-left: 310px;
+}
+.workflow .workspace .ws-header, .workflow .workspace .ws-footer {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+.workflow .workspace .ws-spacer {
+}
+.workflow .workspace .ws-body {
+  padding: 20px;
+  min-height: 500px;
+}
+.workflow .workspace .ws-btns .btn {
+  margin-left: 0.8em;
+  min-width: 10em; 
+}
+.workflow .workspace .ws-header {
+  border-bottom: 1px solid #ddd; 
+  position: relative;
+}
+
+.workflow .workspace .ws-footer {
+  border-top: 1px solid #ddd; 
+  position: relative;
+}
+
+.workflow .workspace .ws-btns {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.workflow .workspace .ws-header h3 {
+  margin: 0;
+  padding-top: 0.2em;
+  color: #888;
+  padding-left: 10px;
+}
+.workflow .stub {
+  min-height: 300px; 
+}
+.breadcrump {
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 4px;
+  border-radius: 3px;
+}
