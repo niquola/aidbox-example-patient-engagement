@@ -17,10 +17,16 @@ export default function build(){
       k.forEach((k)=>{
         listeners[k] = listeners[k] || {};
         listeners[k][id]=l;
+        if(state[k]) {
+          l(state[k]);
+        }
       });
     } else {
       listeners[k] = listeners[k] || {};
       listeners[k][id]=l;
+      if(state[k]){
+        l(state[k]);
+      }
     }
     return id;
   };

@@ -4,6 +4,7 @@ import Resources from './resources.js';
 import Issues from './issues.js';
 import Asses from './assessments.js';
 import Workflow from './workflow.js';
+import NewIssue from './new_issue.js';
 
 export default {
   demographics: {title: "Demographics", cmp: Demog},
@@ -12,5 +13,6 @@ export default {
   issues:  {title: 'Issues',  cmp: Issues},
   assessments:  {title: 'Assessments',  cmp: Asses},
   assessment:  {title: 'Assessments', cmp: Workflow},
-  resources:  {title: 'Resources', cmp: Resources}
+  resources:  {title: 'Resources', cmp: Resources},
+  "new-issue":  {title: 'New Issue', cmp: NewIssue}
 };

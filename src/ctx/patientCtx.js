@@ -13,7 +13,8 @@ let tools = [
   {id: 'demographics', title: 'Demographics'},
   {id: 'meds', title: 'Medications'},
   {id: 'issues', title: 'Issues'},
-  {id: 'assessments', title: 'Assessments'}
+  {id: 'assessments', title: 'Assessments'},
+  {id: 'new-issue', title: 'New Issue'}
 ];
 
 function build(model, path){
@@ -77,10 +78,22 @@ function loadIssuesHx(){
   ]});
 }
 
+function issueTemplates(opts) {
+  store.setState({
+    issueTemplates: [
+      {id: 5, title: 'Help patient to do something'},
+      {id: 1, title: 'Make patient to do something'},
+      {id: 6, title: 'Help patiento...'}
+    ]
+  });
+
+}
+
 
 module.exports.actions = {
   medications:  loadMedications,
   assessments:  loadAssessments,
   issues: loadIssues,
-  issuesHx: loadIssuesHx
+  issuesHx: loadIssuesHx,
+  issueTemplates: issueTemplates
 };

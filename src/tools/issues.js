@@ -10,8 +10,10 @@ class Index extends Component {
 
   render() {
     let props = this.props;
+    let pt = props.patient;
     let issues = props.issues;
     let issuesHx = props.issuesHx;
+    console.log('Patient', pt);
 
     let columns = [{attr: 'id'}, {attr: 'title'}, {attr: 'priority'}];
     let issTable = grid(columns, issues);
@@ -19,9 +21,11 @@ class Index extends Component {
 
     return (
       <div>
-        <h1>Active Issues</h1>
-        <a className="btn btn-success">New Issue</a>
-
+        <h1>
+           Active Issues
+           <span> </span>
+           <a href={`#/patient/${pt.id}/new-issue`}>New Issue</a>
+        </h1>
         {issTable}
 
         <h1>Issues History</h1>
@@ -31,4 +35,4 @@ class Index extends Component {
   }
 }
 
-export default store.bind(Index, ['issues', 'issuesHx']);
+export default store.bind(Index, ['patient', 'issues', 'issuesHx']);
